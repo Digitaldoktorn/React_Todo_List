@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./components/layout/header";
+import AddTodo from "./components/AddTodo";
 import Todos from "./components/Todos";
 import "./App.css";
 
@@ -44,15 +45,31 @@ class App extends Component {
     });
   };
 
+  // Add Todo
+  addTodo = title => {
+    // console.log(title);
+    const newTodo = {
+      id: 4,
+      title,
+      completed: false
+    };
+    this.setState({
+      todos: [...this.state.todos, newTodo]
+    });
+  };
+
   render() {
     return (
       <div className="App">
-        <Header />
-        <Todos
-          todos={this.state.todos}
-          toggleComplete={this.toggleComplete}
-          deleteTodo={this.deleteTodo}
-        />
+        <div className="Container">
+          <Header />
+          <AddTodo addTodo={this.addTodo} />
+          <Todos
+            todos={this.state.todos}
+            toggleComplete={this.toggleComplete}
+            deleteTodo={this.deleteTodo}
+          />
+        </div>
       </div>
     );
   }
