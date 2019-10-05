@@ -4,9 +4,14 @@ class TodoItem extends Component {
   getStyle = () => {
     return {
       padding: "10px",
-      borderBottom: "1px #ccc dotted",
-      backgroundColor: this.props.todo.completed ? "#e6fee6" : "#f4f4f4",
-      marginLeft: this.props.todo.completed ? "4em" : "0em"
+      backgroundColor: this.props.todo.completed
+        ? "rgb(170, 252, 168, 0.3"
+        : "#fff",
+      width: "80%",
+      margin: "0 auto",
+      border: "none",
+      borderRadius: "5px",
+      marginBottom: "2px"
     };
   };
 
@@ -22,7 +27,7 @@ class TodoItem extends Component {
           {title}
           <button
             onClick={this.props.deleteTodo.bind(this, id)}
-            style={btnStyle}
+            className="delBtn"
           >
             Delete
           </button>
@@ -31,13 +36,5 @@ class TodoItem extends Component {
     );
   }
 }
-
-const btnStyle = {
-  backgroundColor: "#FF0000",
-  color: "#FFF",
-  float: "right",
-  padding: "5px 8px",
-  cursor: "pointer"
-};
 
 export default TodoItem;

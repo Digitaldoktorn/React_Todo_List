@@ -64,13 +64,17 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
-
+          <br></br>
+          <br></br>
           <Todos
             todos={this.state.todos}
             toggleComplete={this.toggleComplete}
             deleteTodo={this.deleteTodo}
           />
+          <br></br>
+          <br></br>
           <AddTodo addTodo={this.addTodo} />
+          <br></br>
           <br></br>
         </div>
       </div>

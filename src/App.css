@@ -8,20 +8,19 @@ body {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
+  background-repeat: repeat;
+  background-image: url("./img/553px-Blake_manuscript_-_Notebook_38_-_The_Fairy.jpg"),
+    url("./img/4k-hand-note-pen-writing-wallpaper-preview.jpg");
+  background-blend-mode: screen;
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 40px auto;
   border-radius: 6px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
-  background: rgb(250, 250, 250);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+  background: rgb(240, 240, 240);
   box-sizing: border-box;
   overflow: hidden;
   border: 1px solid lightgray;
@@ -31,11 +30,40 @@ a {
   border-bottom-right-radius: 20px;
 }
 
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  border: none;
+  border-radius: 6px 0 0 6px;
+}
+
 .btn {
   display: inline-block;
   border: none;
-  background: #555;
+  border-radius: 0 6px 6px 0;
+  background: rgb(53, 73, 116);
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(53, 73, 116, 0.9);
+}
+
+.delBtn {
+  background-color: rgb(225, 54, 47);
+  color: #fff;
+  float: right;
+  padding: 6px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.delBtn:hover {
+  background-color: rgb(225, 54, 47, 0.8);
 }
