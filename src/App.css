@@ -34,6 +34,17 @@ h1 {
   border-bottom-right-radius: 20px;
 }
 
+.container-about {
+  /* padding: 0 0 60px 60px; */
+  padding: 10px;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
 form {
   width: 400px;
   margin: 0 auto;
