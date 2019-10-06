@@ -6,12 +6,16 @@
 
 body {
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
   background-repeat: repeat;
   background-image: url("./img/553px-Blake_manuscript_-_Notebook_38_-_The_Fairy.jpg"),
     url("./img/4k-hand-note-pen-writing-wallpaper-preview.jpg");
   background-blend-mode: screen;
+}
+
+h1 {
+  font-family: "Special Elite", cursive;
 }
 
 .container {
